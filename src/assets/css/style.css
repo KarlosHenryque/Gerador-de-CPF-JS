@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --primary-color: #005779;  /* Verde escuro */
+  --primary-color-darker: #1000ec;  /* Verde mais escuro */
+  --secondary-color: #ffffff;  /* Branco */
+  --accent-color: #29ff22;  /* Laranja para destaque */
+  --background-gradient: linear-gradient(135deg, #00796b, #004d40); /* Gradiente suave */
+  --text-color: #000000;  /* Cor de texto suave */
+  --border-radius: 12px;
+  --font-family: 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--background-gradient);
+  font-family: var(--font-family);
+  padding: 20px;
+}
+
+.container {
+  background: var(--secondary-color);
+  padding: 40px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 500px; /* Limita o tamanho da container */
+}
+
+.container h1 {
+  color: var(--primary-color);
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.cpf-gerado {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input {
+  font-size: 1.1rem;
+  height: 45px;
+  padding: 0 15px;
+  border: 1px solid #cccccc;
+  border-radius: var(--border-radius);
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(0, 121, 107, 0.5);
+}
+
+form button {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 50px;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+  transform: scale(1.05);
+}
+
+form button:active {
+  background: var(--accent-color);
+  transform: scale(0.98);
+}
+
+.botao {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.botao button {
+  background: var(--accent-color);
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 14px 28px;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.botao button:hover {
+  background: var(--primary-color-darker);
+  transform: scale(1.05);
+}
+
+.botao button:active {
+  transform: scale(0.98);
+}
